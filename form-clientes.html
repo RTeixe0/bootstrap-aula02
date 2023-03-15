@@ -24,7 +24,7 @@
                 <a class="nav-link mx-5 font-menu" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-5 font-menu" href="sobre.html">Sobre</a>
+                <a class="nav-link mx-5 font-menu" href="#">Sobre</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-5 font-menu" href="catalogo.html">Catálogo</a>
@@ -39,7 +39,7 @@
                 </div>
               </li> 
               <li class="nav-item">
-                <a class="nav-link mx-5 font-menu" href="logout.html">Logout</a>
+                <a class="nav-link mx-5 font-menu" href="#">Logout</a>
               </li>
           </ul>
         </div>
@@ -55,15 +55,15 @@
             <div class="form-row">
               <div class="form-group col-2">                    
                   <label for="codigo">Código:</label>
-                  <input type="text" class="form-control" id="codigo" name="codigo" placeholder="">
+                  <input type="text" class="form-control" id="codigo" name="codigo" value="A15">
               </div>
               <div class="form-group col-6">                    
                 <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome" name="nome" placeholder="">
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo">
               </div>
               <div class="form-group col-4">                    
                 <label for="cadastro">Data Cadastro:</label>
-                <input type="date" class="form-control" id="cadastro" name="cadastro" placeholder="">
+                <input type="text" class="form-control" id="cadastro" name="cadastro">
               </div>                  
             </div>
             <!-- fim da primeira linha -->
@@ -73,18 +73,18 @@
               <div class="form-group col-2">
                   <label for="genero">Gênero:</label>
                   <select id="genero" name="genero" class="form-control">
-                      <option selected>Escolha...</option>
+                      <option value="0">Selecione...</option>
                       <option value="m">Masculino</option>
                       <option value="f">Feminino</option>
                   </select>
               </div>
               <div class="form-group col-6">                    
                 <label for="email">E-mail:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="">
+                <input type="email" class="form-control" id="email" name="email">
               </div>
               <div class="form-group col-4">                    
                 <label for="tel">Telefone:</label>
-                <input type="text" class="form-control" id="tel" name="tel" placeholder="">
+                <input type="text" class="form-control" id="tel" name="tel" required>
               </div>
           </div>  
           <!-- fim da segunda linha --> 
@@ -96,11 +96,11 @@
           <div class="form-row">
             <div class="form-group col-4">                    
               <label for="cep">CEP:</label>
-              <input type="text" class="form-control" id="cep" name="cep" placeholder="">
+              <input type="text" class="form-control" id="cep" name="cep">
             </div> 
             <div class="form-group col-8">                    
                 <label for="rua">Rua:</label>
-                <input type="text" class="form-control" id="rua" name="rua" placeholder="">
+                <input type="text" class="form-control" id="rua" name="rua">
             </div>                
           </div>
           <!-- fim da terceira linha -->
@@ -109,15 +109,15 @@
           <div class="form-row">
             <div class="form-group col-4">                    
               <label for="bairro">Bairro:</label>
-              <input type="text" class="form-control" id="bairro" name="bairro" placeholder="">
+              <input type="text" class="form-control" id="bairro" name="bairro">
             </div> 
             <div class="form-group col-4">                    
                 <label for="cidade">Cidade:</label>
-                <input type="text" class="form-control" id="cidade" name="cidade" placeholder="">
+                <input type="text" class="form-control" id="cidade" name="cidade">
             </div>
             <div class="form-group col-4">                    
               <label for="estado">Estado:</label>
-              <select id="estado" name="estado" class="form-control"> 
+              <select class="form-control" id="estado" name="estado"> 
                 <option value="0">Selecione...</option>
                 <option value="sp">SP</option>
                 <option value="mg">MG</option>

@@ -48,29 +48,108 @@
 
       <main class="bg-light p-5">
         <h2 class="display-5 mb-4">PinguimFlix | Cadastro de Filmes</h2>
-        <p class="lead">ATIVIDADE ALUNOS: Elaborar o formulário de cadastro de filmes utilizando os dados a seguir:</p>
-        <form id="#" name="#" method="#" action="#">
+        <form id="form1" name="form1" method="POST" action="#">
           <fieldset>
-            <legend>Dados para o cadastro de filme</legend>
-            <ul>
-              <li>Código</li>
-              <li>Título</li>
-              <li>Sinopse</li>
-              <li>Direção</li>
-              <li>País de origem</li>
-              <li>Ano de lançamento</li>
-              <li>Duração (tempo)</li>
-              <li>Elenco principal</li>
-              <li>Idiomas disponíveis</li>
-              <li>Gênero [Ação, Aventura, Comédia, etc]</li>
-              <li>Classificação [livre, +12, +16, +18]</li>
-            </ul>        
-          </fieldset>
+            <legend>Cadastro de Filmes</legend>
+       
+            <div class="form-row">
+              <div class="form-group col-2">                    
+                  <label for="codigo">Código:</label>
+                  <input type="text" class="form-control" id="codigo" name="codigo" value="">
+              </div>
+              <div class="form-group col-5">                    
+                <label for="nome">Titulo:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" placeholder="">
+              </div>
+              <div class="form-group col-5">                    
+                <label for="nome">Direção:</label>
+                <input type="text" class="form-control" id="direcao" name="direcao" placeholder="">
+              </div>
+              <div class="form-group col-5">                    
+                <label for="nome">Pais de Origem:</label>
+                <input type="text" class="form-control" id="pais" name="pais" placeholder="">
+              </div>
+              <div class="form-group col-4">                    
+                <label for="cadastro">Ano de Lançamento:</label>
+                <input type="date" class="form-control" id="lancamento" name="lancamento">
+              </div> 
+              <div class="form-group col-3">                    
+                <label for="nome">Duração:</label>
+                <input type="number" class="form-control" id="duracao" name="duracao" placeholder="" min="1" step="1">
+              </div>
+              <div class="form-group col-12">                    
+                <label for="elenco">Elenco principal:</label>
+                <textarea class="form-control" id="elenco" name="elenco" rows="4" placeholder=""></textarea>
+            </div>  
+              <div class="form-group col-12">
+                <label for="sinopse">Sinopse:</label>
+                <textarea class="form-control" id="sinopse" name="sinopse" rows="5" placeholder=""></textarea>
+              </div> 
+              <div class="form-group col-6">
+                <label for="idiomas">Idiomas disponíveis:</label>
+                <div class="checkbox-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="portugues" name="idiomas[]" value="portugues">
+                        <label class="form-check-label" for="portugues">Português</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="ingles" name="idiomas[]" value="ingles">
+                        <label class="form-check-label" for="ingles">Inglês</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="espanhol" name="idiomas[]" value="espanhol">
+                        <label class="form-check-label" for="espanhol">Espanhol</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="frances" name="idiomas[]" value="frances">
+                        <label class="form-check-label" for="frances">Francês</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="alemao" name="idiomas[]" value="alemao">
+                        <label class="form-check-label" for="alemao">Alemão</label>
+                    </div>
+                  
+                </div>
+            </div>
+            
+                
+                      
+            
+             
 
+
+
+
+                             
+            </div>
+            
+            
+          
+        
+            <div class="form-row">              
+              <div class="form-group col-2">
+                  <label for="genero">Gênero:</label>
+                  <select id="genero" name="genero" class="form-control">
+                      <option>Selecione...</option>
+                      <option value="m">Masculino</option>
+                      <option value="f">Feminino</option>
+                  </select>
+              </div>
+              <div class="form-group col-6">                    
+                <label for="nome">Classificação:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="">
+              </div>
+          <!-- fim da segunda linha --> 
+          </fieldset>
+        
+     
           <div class="form-row">              
-            <div class="form-group col-12 mt-4">                    
-              <a href="index.html" class="btn btn-outline-primary btn-lg">Voltar para menu</a> 
-            </div>                
+              <div class="form-group col-6 ">                    
+                <a href="index.html" class="btn btn-outline-primary btn-lg">Voltar para menu</a> 
+              </div>  
+              <div class="form-group col-6 text-right">                    
+                <button type="submit" class="btn btn-primary btn-lg">Cadastrar Cliente</button> 
+              </div>               
           </div>      
         </form>  
       </main>
